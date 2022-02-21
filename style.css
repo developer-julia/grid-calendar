@@ -1,0 +1,579 @@
+/* ==== BASE === */
+body {
+    background-color: #7C7ED4;
+}
+.advent-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Lemon;
+    font-size: 65px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+.advent { 
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px 50px 20px;
+}
+.advent-items {  
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 30px 30px;
+    grid-auto-flow: row;
+    height: 800px;
+    grid-template-areas:
+      "advent-5 advent-2 advent-2 advent-10 advent-12 advent-7 advent-7"
+      "advent-5 advent-8 advent-4 advent-4 advent-15 advent-11 advent-9"
+      "advent-3 advent-3 advent-1 advent-18 advent-13 advent-13 advent-9"
+      "advent-6 advent-19 advent-1 advent-16 advent-16 advent-14 advent-17";
+  }
+  .advent-1, .advent-2, .advent-3, .advent-4, .advent-5, .advent-6, .advent-7, .advent-8, .advent-9, .advent-10,
+  .advent-11, .advent-12, .advent-13, .advent-14, .advent-15, .advent-16, .advent-17, .advent-18, .advent-19 { 
+      background-color: cornsilk;
+      border-radius: 10px;
+      outline: 5px dashed #FFFFFF;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        cursor: pointer;
+  }
+  .advent-link__small{
+      display: block;
+      height: 177px;
+  }
+  .advent-link__big{
+    display: block;
+    height: 385px;
+}
+/* == ADVENT-NUM == */
+    .advent-5 {
+        grid-area: advent-5;
+        background-image: url(./img/advent-num/advent-5.png);
+        transition: opacity .2s;
+        animation: advent-5 3s ease-in-out infinite;
+    }
+    .advent-5:hover, .advent-5:focus, .advent-5:active {
+        opacity: .8;
+    }
+    @keyframes advent-5 {
+        0%   { transform: translateY(0); }
+        30%  { transform: translateY(-5px); }
+        50%  { transform: translateY(0); }
+        100% { transform: translateY(0); }
+    }
+  
+    .advent-2 {
+        grid-area: advent-2;
+        background-image: url(./img/advent-num/advent-2.png);
+        transition: opacity .2s;
+        animation: advent-2 3s ease-in-out infinite;
+    }
+    .advent-2:hover, .advent-2:focus, .advent-2:active {
+        opacity: .8;
+    }
+    @keyframes advent-2 {
+        0%   { transform: translateY(0); }
+        10%  { transform: translateY(-5px); }
+        30%  { transform: translateY(0); }
+        100% { transform: translateY(0); }
+    }
+  
+    .advent-8 {
+        grid-area: advent-8;
+        background-image: url(./img/advent-num/advent-8.png);
+        background-position: 70% 30%;
+        transition: .2s;
+    }
+    .advent-8:hover, .advent-8:focus, .advent-8:active {
+        transform: translateY(-2%);
+    }
+  
+    .advent-10 {
+        grid-area: advent-10;
+        background-image: url(./img/advent-num/advent-10.png);
+        background-position: 70% 30%;
+        transition: .2s;
+    }
+    .advent-10:hover, .advent-10:focus, .advent-10:active {
+        filter: hue-rotate(90deg);
+    }
+  
+    .advent-4 {
+        grid-area: advent-4;
+        background-image: url(./img/advent-num/advent-4.png);
+        background-position: top;
+        transition: opacity .2s;
+        animation: advent-4 3s ease-in-out infinite;
+    }
+    .advent-4:hover, .advent-4:focus, .advent-4:active {
+        opacity: .8;
+    }
+    @keyframes advent-4 {
+        0%   { transform: translateY(0); }
+        30%  { transform: translateY(-5px); }
+        50%  { transform: translateY(0); }
+        100% { transform: translateY(0); }
+    }
+  
+    .advent-12 {
+        grid-area: advent-12;
+        background-image: url(./img/advent-num/advent-12.png);
+        background-position: center;
+        transition: .2s;
+    }
+    .advent-12:hover, .advent-12:focus, .advent-12:active {
+        transform: translateY(-2%);
+    }
+  
+    .advent-15 {
+        grid-area: advent-15;
+        background-image: url(./img/advent-num/advent-15.png);
+        transition: .2s;
+    }
+    .advent-15:hover, .advent-15:focus, .advent-15:active {
+        transform: translateY(-2%);
+    }
+  
+    .advent-3 {
+        grid-area: advent-3;
+        background-image: url(./img/advent-num/advent-3.png);
+        background-position: top;
+        transition: opacity .2s;
+        animation: advent-3 3s ease-in-out infinite;
+    }
+    .advent-3:hover, .advent-3:focus, .advent-3:active {
+        opacity: .8;
+    }
+    @keyframes advent-3 {
+        0%   { transform: translateY(0); }
+        10%  { transform: translateY(-5px); }
+        30%  { transform: translateY(0); }
+        100% { transform: translateY(0); }
+    }
+  
+    .advent-1 {
+            grid-area: advent-1;
+            background-image: url(./img/advent-num/advent-1.png);
+            transition: opacity .2s;
+            animation: advent-1 3s ease-in-out infinite;
+        }
+        .advent-1:hover, .advent-1:focus, .advent-1:active {
+            opacity: .8;
+        }
+        @keyframes advent-1 {
+            0%   { transform: translateY(0); }
+            10%  { transform: translateY(-5px); }
+            30%  { transform: translateY(0); }
+            100% { transform: translateY(0); }
+        }
+  
+    .advent-6 { 
+            grid-area: advent-6;
+            background-image: url(./img/advent-num/advent-6.png);
+            transition: .2s;
+    }
+    .advent-6:hover, .advent-6:focus, .advent-6:active {
+        transform: translateY(-2%);
+    }
+  
+    .advent-7 { 
+            grid-area: advent-7;
+            background-image: url(./img/advent-num/advent-7.png);
+            transition: opacity .2s;
+            animation: advent-7 3s ease-in-out infinite;
+    }
+    .advent-7:hover, .advent-7:focus, .advent-7:active {
+            opacity: .8;
+    }
+    @keyframes advent-7 {
+            0%   { transform: translateY(0); }
+            10%  { transform: translateY(-5px); }
+            30%  { transform: translateY(0); }
+            100% { transform: translateY(0); }
+    }
+  
+    .advent-9 { 
+            grid-area: advent-9;
+            background-image: url(./img/advent-num/advent-9.png);
+            background-position: top;
+            transition: opacity .2s;
+        animation: advent-9 3s ease-in-out infinite;
+    }
+    .advent-9:hover, .advent-9:focus, .advent-9:active {
+        opacity: .8;
+    }
+    @keyframes advent-9 {
+        0%   { transform: translateY(0); }
+        20%  { transform: translateY(-5px); }
+        40%  { transform: translateY(0); }
+        100% { transform: translateY(0); }
+    }
+  
+    .advent-11 { 
+        grid-area: advent-11;
+        background-image: url(./img/advent-num/advent-11.png);
+        background-position: top;
+        transition: .2s;
+    }
+    .advent-11:hover, .advent-11:focus, .advent-11:active {
+        filter: hue-rotate(90deg);
+    }
+  
+    .advent-13 { 
+        grid-area: advent-13;
+        background-image: url(./img/advent-num/advent-13.png);
+        transition: opacity .2s;
+        animation: advent-13 3s ease-in-out infinite;
+    }
+    .advent-13:hover, .advent-13:focus, .advent-13:active {
+        opacity: .8;
+    }
+    @keyframes advent-13 {
+        0%   { transform: translateY(0); }
+        30%  { transform: translateY(-5px); }
+        50%  { transform: translateY(0); }
+        100% { transform: translateY(0); }
+    }
+  
+    .advent-16 { 
+        grid-area: advent-16;
+        background-image: url(./img/advent-num/advent-16.png);
+        background-position: top;
+        transition: opacity .2s;
+        animation: advent-16 3s ease-in-out infinite;
+    }
+    .advent-16:hover, .advent-16:focus, .advent-16:active {
+        opacity: .8;
+    }
+    @keyframes advent-16 {
+        0%   { transform: translateY(0); }
+        20%  { transform: translateY(-5px); }
+        40%  { transform: translateY(0); }
+        100% { transform: translateY(0); }
+    }
+  
+    .advent-14 { 
+        grid-area: advent-14;
+        background-image: url(./img/advent-num/advent-14.png);
+        background-position: top;
+        transition: .2s;
+    }
+    .advent-14:hover, .advent-14:focus, .advent-14:active {
+        transform: translateY(-2%);
+    }
+  
+    .advent-17 { 
+        grid-area: advent-17;
+        background-image: url(./img/advent-num/advent-17.png);
+        background-position: top;
+        transition: .2s;
+    }
+    .advent-17:hover, .advent-17:focus, .advent-17:active {
+        filter: hue-rotate(90deg);
+    }
+  
+    .advent-18 { 
+        grid-area: advent-18;
+        background-image: url(./img/advent-num/advent-18.png);
+        background-position: top;
+        transition: .2s;
+    }
+    .advent-18:hover, .advent-18:focus, .advent-18:active {
+        transform: translateY(-2%);
+    }
+  
+    .advent-19 { 
+        grid-area: advent-19;
+        background-image: url(./img/advent-num/advent-19.png);
+        background-position: top;
+        transition: .2s;
+    }
+    .advent-19:hover, .advent-19:focus, .advent-19:active {
+        filter: hue-rotate(90deg);
+    }
+  
+    /* == MEDIA == */
+    @media screen and (max-width:1400px){
+        .advent { 
+            max-width: 1200px;
+        }
+        .advent-items {  
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            gap: 30px 30px;
+            grid-template-areas:
+              "advent-5 advent-2 advent-2 advent-10 advent-12 advent-17"
+              "advent-5 advent-8 advent-4 advent-4 advent-15 advent-11"
+              "advent-3 advent-3 advent-1 advent-18 advent-13 advent-13"
+              "advent-6 advent-19 advent-1 advent-16 advent-16 advent-14"
+              "advent-7 advent-7 advent-7 advent-9 advent-9 advent-9";
+          }
+
+        .advent-7 { 
+            height: 177px;
+            background-image: url(./img/advent-num/advent-adaptive/advent-7.png);
+        }
+        .advent-9 { 
+            height: 177px;
+            background-image: url(./img/advent-num/advent-adaptive/advent-9.png);
+        }
+        .advent-9 > .advent-link__big {
+            height: 177px;
+        } 
+    }
+
+    @media screen and (max-width:1250px){
+        .advent { 
+            max-width: 1100px;
+        }
+        .advent-items {  
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            gap: 25px 25px;
+            grid-template-areas:
+              "advent-5 advent-2 advent-2 advent-10 advent-12"
+              "advent-5 advent-8 advent-4 advent-4 advent-15"
+              "advent-3 advent-3 advent-1 advent-18 advent-11"
+              "advent-6 advent-19 advent-1 advent-16 advent-16"
+              "advent-7 advent-7 advent-9 advent-9 advent-9"
+              "advent-14 advent-13 advent-13 advent-17 advent-17";
+          }
+
+        .advent-17 { 
+            height: 177px;
+            background-image: url(./img/advent-num/advent-adaptive/advent-17.png);
+        }
+        .advent-13 { 
+            height: 177px;
+            background-image: url(./img/advent-num/advent-adaptive/advent-13.png);
+        }
+        .advent-1 > .advent-link__big, .advent-5 > .advent-link__big {height: 379px;}
+    }
+
+    @media screen and (max-width:950px){
+        .advent { 
+            max-width: 850px;
+        }
+        .advent-items {  
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: "advent-5 advent-2 advent-2 advent-10"
+                          "advent-5 advent-8 advent-4 advent-4"
+                          "advent-3 advent-3 advent-1 advent-18"
+                          "advent-6 advent-19 advent-1 advent-14"
+                          "advent-7 advent-7 advent-9 advent-9"
+                          "advent-13 advent-13 advent-17 advent-15"
+                          "advent-12 advent-11 advent-16 advent-16";
+            }
+        .advent-17 { 
+            height: 177px;
+            background-image: url(./img/advent-num/advent-17.png);
+        }
+        .advent-13 { 
+            height: 177px;
+            background-image: url(./img/advent-num/advent-adaptive/advent-13.png);
+        }
+        .advent-9 {
+            background-image: url(./img/advent-num/advent-adaptive/advent-9__2.png);
+        }
+        .advent-5>.advent-link__big,.advent-1>.advent-link__big{height: 379px;}
+    }
+
+    @media screen and (max-width:750px){
+        .advent-title {
+            font-size: 50px;
+            padding-top: 35px;
+            padding-bottom: 25px;
+        }
+        .advent { 
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 0 5px;
+        }
+        .advent-items {  
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 15px 0px;
+            grid-template-areas: "advent-5 advent-2 advent-2"
+                                "advent-5 advent-8 advent-10"
+                                "advent-4 advent-4 advent-1"
+                                "advent-6 advent-19 advent-1"
+                                "advent-7 advent-7 advent-14"
+                                "advent-18 advent-13 advent-13"
+                                "advent-15 advent-17 advent-9"
+                                "advent-11 advent-11 advent-9"
+                                "advent-12 advent-16 advent-16";
+            }
+            
+        .advent-9 { 
+            height: 370px;
+            background-image: url(./img/advent-num/advent-9.png);
+        }
+        .advent-5>.advent-link__big, .advent-1>.advent-link__big, .advent-9>.advent-link__big{height: 370px;}
+        .advent-11 { 
+            background-image: url(./img/advent-num/advent-adaptive/advent-11.png);
+        }
+        .advent-5, .advent-8, .advent-4, .advent-19, .advent-6, .advent-7,
+        .advent-18, .advent-15, .advent-17, .advent-11, .advent-12 
+        { margin-right: 15px;}
+    }
+
+    @media screen and (max-width:550px){
+        .advent-1, .advent-2, .advent-3, .advent-4, .advent-5, .advent-6, .advent-7, .advent-8, .advent-9, .advent-10,
+        .advent-11, .advent-12, .advent-13, .advent-14, .advent-15, .advent-16, .advent-17, .advent-18, .advent-19 { 
+        border-radius: 10px;
+        outline: 4px dashed #FFFFFF;
+        height: 210px;
+        }   
+        .advent { 
+            max-width: 500px;
+            padding: 0 5px;
+        }
+        .advent-items {  
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(14, 1fr);
+            gap: 15px 0px;
+            height: 100px;
+            grid-template-areas: "advent-5 advent-8"
+                                "advent-5 advent-10"
+                                "advent-2 advent-2"
+                                "advent-4 advent-4"
+                                "advent-1 advent-6"
+                                "advent-1 advent-19"
+                                "advent-7 advent-7"
+                                "advent-14 advent-18"
+                                "advent-13 advent-13"
+                                "advent-9 advent-15"
+                                "advent-9 advent-17"
+                                "advent-11 advent-11"
+                                "advent-12 advent-12"
+                                "advent-16 advent-16";
+            }
+        .advent-5, .advent-1, .advent-9 {
+            height: 435px;
+            margin-right: 15px;
+        }
+        .advent-8, .advent-4, .advent-19, .advent-6, .advent-7,
+        .advent-18, .advent-15, .advent-17, .advent-11, .advent-12 
+        { margin-right: 0;}
+        .advent-14 { margin-right: 15px;}
+        .advent-12 {
+            background-image: url(./img/advent-num/advent-adaptive/advent-12__2.png);
+            background-position: top;
+        }
+        .advent-link__small {height: 210px;}
+        .adent-1 > .advent-link__big, .advent-5 > .advent-link__big, .advent-9 > .advent-link__big {height: 435px;}
+    }
+
+    @media screen and (max-width:440px){
+        .advent-title {
+            font-size: 40px;
+            padding-top: 25px;
+            padding-bottom: 10px;
+        }
+        .advent-1, .advent-2, .advent-3, .advent-4, .advent-5, .advent-6, .advent-7, .advent-8, .advent-9, .advent-10,
+        .advent-11, .advent-12, .advent-13, .advent-14, .advent-15, .advent-16, .advent-17, .advent-18, .advent-19 { 
+        border-radius: 10px;
+        outline: 4px dashed #FFFFFF;
+        height: 180px;
+        }   
+        .advent-5, .advent-1, .advent-9 {
+            height: 315px;
+            margin-right: 15px;
+        }
+        .advent { 
+            max-width: 420px;
+            margin: 0 auto;
+            padding: 0 5px;
+        }
+        .advent-link__small {
+            height: 180px;
+        }
+        .advent-5>.advent-link__big, .advent-1>.advent-link__big, .advent-9>.advent-link__big {
+            height: 315px;
+        }
+        .advent-items {  
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(14, 1fr);
+            gap: 15px 0px;
+            height: 100px;
+            grid-template-areas: "advent-5 advent-8"
+                                "advent-5 advent-10"
+                                "advent-2 advent-2"
+                                "advent-4 advent-4"
+                                "advent-1 advent-6"
+                                "advent-1 advent-19"
+                                "advent-7 advent-7"
+                                "advent-14 advent-18"
+                                "advent-13 advent-13"
+                                "advent-9 advent-15"
+                                "advent-9 advent-17"
+                                "advent-11 advent-11"
+                                "advent-12 advent-12"
+                                "advent-16 advent-16";
+            }
+        .advent-8, .advent-4, .advent-19, .advent-6, .advent-7,
+        .advent-18, .advent-15, .advent-17, .advent-11, .advent-12 
+        { margin-right: 0;}
+        .advent-14 { margin-right: 15px;}
+    }
+
+    @media screen and (max-width:400px){
+        .advent-title {
+            font-size: 35px;
+            padding-top: 25px;
+            padding-bottom: 10px;
+        }
+        .advent-1, .advent-2, .advent-3, .advent-4, .advent-5, .advent-6, .advent-7, .advent-8, .advent-9, .advent-10,
+        .advent-11, .advent-12, .advent-13, .advent-14, .advent-15, .advent-16, .advent-17, .advent-18, .advent-19 { 
+        border-radius: 10px;
+        outline: 4px dashed #FFFFFF;
+        height: 150px;
+        }   
+        .advent-5, .advent-1, .advent-9 {
+            height: 315px;
+            margin-right: 15px;
+        }
+        .advent { 
+            max-width: 380px;
+            margin: 0 auto;
+            padding: 0 5px;
+        }
+        .advent-items {  
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(14, 1fr);
+            gap: 15px 0px;
+            height: 100px;
+            grid-template-areas: "advent-5 advent-8"
+                                "advent-5 advent-10"
+                                "advent-2 advent-2"
+                                "advent-4 advent-4"
+                                "advent-1 advent-6"
+                                "advent-1 advent-19"
+                                "advent-7 advent-7"
+                                "advent-14 advent-18"
+                                "advent-13 advent-13"
+                                "advent-9 advent-15"
+                                "advent-9 advent-17"
+                                "advent-11 advent-11"
+                                "advent-12 advent-12"
+                                "advent-16 advent-16";
+            }
+        .advent-8, .advent-4, .advent-19, .advent-6, .advent-7,
+        .advent-18, .advent-15, .advent-17, .advent-11, .advent-12 
+        { margin-right: 0;}
+        .advent-14 { margin-right: 15px;}
+        .advent-link__small {
+            height: 150px;
+        }
+        .advent-5>.advent-link__big, .advent-1>.advent-link__big, .advent-9>.advent-link__big {
+            height: 315px;
+        }
+    }
